@@ -11,8 +11,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
-    EditText edtTitle, edtContent, edtDate, edtType;
-    Button btnAdd, btnUpdate, btnDelete;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,12 +22,6 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        edtTitle = findViewById(R.id.edtTitle);
-        edtContent = findViewById(R.id.edtContent);
-        edtDate = findViewById(R.id.edtDate);
-        edtType = findViewById(R.id.edtType);
-        btnAdd = findViewById(R.id.btnAdd);
-        btnUpdate = findViewById(R.id.btnUpdate);
-        btnDelete = findViewById(R.id.btnDelete);
+
     }
 }

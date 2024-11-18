@@ -7,15 +7,16 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import com.example.ad2_lab1.R;
-import com.example.ad2_lab1.model.Task;
+import com.example.ad2_lab1.model.TodoModel;
 
 import java.util.ArrayList;
 
+
 public class ListViewAdapter extends BaseAdapter {
-    private ArrayList<Task> lists;
+    private ArrayList<TodoModel> lists;
     private Context context;
 
-    public ListViewAdapter(ArrayList<Task> lists, Context context) {
+    public ListViewAdapter(ArrayList<TodoModel> lists, Context context) {
         this.lists = lists;
         this.context = context;
     }
@@ -38,14 +39,14 @@ public class ListViewAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         if(convertView == null){
-            convertView = View.inflate(parent.getContext(), R.layout.activity_main, null);
+            convertView = View.inflate(parent.getContext(), R.layout.item_todo, null);
         }
 
-        TextView tvTittle = convertView.findViewById(R.id.title);
-        TextView tvContent = convertView.findViewById(R.id.content);
-        TextView tvDate = convertView.findViewById(R.id.date);
+        TextView tvTittle = convertView.findViewById(R.id.tvTittle);
+        TextView tvContent = convertView.findViewById(R.id.tvContent);
+        TextView tvDate = convertView.findViewById(R.id.tvDate);
 
-        Task todoModel = lists.get(position);
+        TodoModel todoModel = lists.get(position);
         tvTittle.setText(todoModel.getTitle());
         tvContent.setText(todoModel.getContent());
         tvDate.setText(todoModel.getDate());

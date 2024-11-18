@@ -1,103 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
+    tools:context=".MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="To do list"
-        android:textSize="30sp" />
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/title"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Title:"
-        android:textSize="26sp" />
-
-    <EditText
-        android:id="@+id/edtTitle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Nhap"
-        android:textSize="26sp" />
-
-    <TextView
-        android:id="@+id/content"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Content:"
-        android:textSize="26sp" />
-
-    <EditText
-        android:id="@+id/edtContent"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Nhap"
-        android:textSize="26sp" />
-
-    <TextView
-        android:id="@+id/date"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Date:"
-        android:textSize="26sp" />
-
-    <EditText
-        android:id="@+id/edtDate"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Nhap"
-        android:textSize="26sp" />
-
-    <TextView
-        android:id="@+id/type"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Type:"
-        android:textSize="26sp" />
-
-    <EditText
-        android:id="@+id/edtType"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Nhap"
-        android:textSize="26sp" />
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/btnAdd"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="14dp"
-            android:text="ADD" />
-
-        <Button
-            android:id="@+id/btnUpdate"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="14dp"
-            android:text="UPDATE" />
-
-        <Button
-            android:id="@+id/btnDelete"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="14dp"
-            android:text="DELETE" />
-
-    </LinearLayout>
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
